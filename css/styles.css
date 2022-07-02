@@ -12,6 +12,7 @@
   /* bg colors */
   --Dark-bg-cl-1: #2f303a;
   --hero-button-bg-cl: #188ce8;
+  --portfolio-buttons-bg-cl: #F5F4FA;
   /* others */
 }
 
@@ -19,7 +20,6 @@
 
 body {
   font-family: var(--main-font);
-  color: var(--main-txt-cl);
   width: 1600px;
   height: 2349px;
 }
@@ -205,23 +205,6 @@ body {
 /** 
 PORTFOLIO SECTION 
 **/
-
-:root {
-  /* fonts */
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
-  /* text colors */
-  --main-txt-cl: #212121;
-  --main-txt-item-cl: #757575;
-  --accent-txt-cl: #2196f3;
-  --logo-style-cl: #000000;
-  --header-phone-number: #757575;
-  --hero-txt-cl: #ffffff;
-  /* bg colors */
-  --Dark-bg-cl-1: #2f303a;
-  --hero-button-bg-cl: #188ce8;
-  /* others */
-}
 
 .btn {
   background-color: var(--portfolio-buttons-bg-cl);
