@@ -11,7 +11,7 @@
   --hero-txt-cl: #ffffff;
   /* bg colors */
   --Dark-bg-cl-1: #2f303a;
-  --portfolio-buttons-bg-cl: #f5f4fa;
+  --hero-button-bg-cl: #188CE8;
   /* others */
 }
 
@@ -47,7 +47,7 @@ body {
   color: var(--main-txt-cl);
 }
 
-/* headr-cection */
+/* header-cection */
 
 .logo {
   color: var(--accent-txt-cl);
@@ -104,6 +104,10 @@ body {
   font-family: inherit;
   text-align: center;
 }
+.hero-button:hover,
+.hero-button:focus {
+    background-color: var(--hero-button-bg-cl);
+} 
 .hero-button {
   background-color: var(--accent-txt-cl);
   font-weight: 700;
