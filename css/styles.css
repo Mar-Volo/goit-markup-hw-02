@@ -235,7 +235,8 @@ PORTFOLIO SECTION
 }
 
 .btn:hover,
-.btn:focus {
+.btn:focus,
+.btn:active {
   color: var(--hero-txt-cl);
   background-color: var(--accent-txt-cl);
 }
