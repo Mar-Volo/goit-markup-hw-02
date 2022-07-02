@@ -179,48 +179,47 @@ body {
   color: var(--hero-txt-cl);
 }
 
-.contacts-item {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--hero-txt-cl);
-}
-
+.contacts-item,
 .mail-footer,
 .phone-number-footer {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+}
+.addres-link {
+  color: var(--hero-txt-cl);
+}
+
+.mail-footer,
+.phone-number-footer {
   color: rgba(255, 255, 255, 0.6);
+}
+.mail-footer:hover,
+.phone-number-footer:focus {
+  color: var(--hero-txt-cl);
 }
 
 /** 
 PORTFOLIO SECTION 
 **/
 
-/* 
- fonts 
---main-font: 'Roboto', sans-serif;
---secondary-font: 'Raleway', sans-serif;
-
-     text colors
-
---main-txt-cl: #212121;
---main-txt-item-cl: #757575;
---accent-txt-cl: #2196F3;
---logo-style-cl: #000000;
---header-phone-number: #757575;
---hero-txt-cl: #FFFFFF;
-
-     bg colors 
-
---Dark-bg-cl-1: #2F303A;
---portfolio-buttons-bg-cl: #F5F4FA;
-
-     others 
-*/
+:root {
+  /* fonts */
+  --main-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+  /* text colors */
+  --main-txt-cl: #212121;
+  --main-txt-item-cl: #757575;
+  --accent-txt-cl: #2196f3;
+  --logo-style-cl: #000000;
+  --header-phone-number: #757575;
+  --hero-txt-cl: #ffffff;
+  /* bg colors */
+  --Dark-bg-cl-1: #2f303a;
+  --hero-button-bg-cl: #188ce8;
+  /* others */
+}
 
 .btn {
   background-color: var(--portfolio-buttons-bg-cl);
