@@ -11,7 +11,7 @@
   --hero-txt-cl: #ffffff;
   /* bg colors */
   --Dark-bg-cl-1: #2f303a;
-  --hero-button-bg-cl: #188CE8;
+  --hero-button-bg-cl: #188ce8;
   /* others */
 }
 
@@ -60,6 +60,17 @@ body {
 .logo-style {
   color: var(--logo-style-cl);
 }
+.header-list,
+.mail,
+.phone-number {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+.header-list {
+  color: var(--main-txt-cl);
+}
 .header-link:hover,
 .header-link:focus {
   color: var(--accent-txt-cl);
@@ -67,24 +78,9 @@ body {
 .header-link-current {
   color: var(--accent-txt-cl);
 }
-.header-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--main-txt-cl);
-}
-.mail {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-}
+
+.mail,
 .phone-number {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
   color: var(--header-phone-number);
 }
 
@@ -106,8 +102,8 @@ body {
 }
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--hero-button-bg-cl);
-} 
+  background-color: var(--hero-button-bg-cl);
+}
 .hero-button {
   background-color: var(--accent-txt-cl);
   font-weight: 700;
