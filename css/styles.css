@@ -148,6 +148,9 @@ body {
 }
 
 /* team section */
+.team {
+    background-color: var(--portfolio-buttons-bg-cl);
+}
 
 .teammate {
   font-weight: 700;
