@@ -20,8 +20,10 @@
 
 body {
   font-family: var(--main-font);
-  width: 1600px;
-  height: 2349px;
+  color: var(--main-txt-cl);
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 /* reset styles */
@@ -43,7 +45,6 @@ body {
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
 
@@ -55,7 +56,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
 }
 .logo-style {
   color: var(--logo-style-cl);
@@ -106,24 +106,37 @@ body {
 }
 .hero-button {
   background-color: var(--accent-txt-cl);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: var(--hero-txt-cl);
   border: none;
+  cursor: pointer;
 }
 
 /* benefits section */
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .benefits {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-txt-cl);
 }
@@ -131,7 +144,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--main-txt-item-cl);
 }
 
@@ -143,7 +155,6 @@ body {
   font-size: 36px;
   line-height: calc(42 / 35);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
 
@@ -153,11 +164,10 @@ body {
 }
 
 .teammate {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-txt-cl);
 }
 .teammate-profession {
@@ -165,7 +175,6 @@ body {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-txt-item-cl);
 }
 
@@ -185,7 +194,6 @@ body {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
 .addres-link {
   color: var(--hero-txt-cl);
@@ -195,11 +203,13 @@ body {
 .phone-number-footer {
   color: rgba(255, 255, 255, 0.6);
 }
+.addres-link:hover,
+.addres-link:focus,
 .mail-footer:hover,
 .mail-footer:focus,
 .phone-number-footer:hover,
 .phone-number-footer:focus {
-  color: var(--hero-txt-cl);
+  color: var(--accent-txt-cl);
 }
 
 /** 
@@ -237,6 +247,5 @@ PORTFOLIO SECTION
   font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--main-txt-item-cl);
 }
